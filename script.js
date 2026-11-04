@@ -164,7 +164,7 @@ function updateUI() {
   document.getElementById("score").textContent = score;
 
   document.getElementById("gauge").textContent =
-    Math.min(100, score % 101);
+    score % 100;
 }
 
 // 게임 화면 그리기
