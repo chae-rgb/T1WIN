@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* 전체 페이지 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101638;
+  color: white;
+  text-align: center;
+}
+
+/* 입장 화면 */
+#entrance {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 120px 20px;
+  background: #17265C;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* 닉네임 입력창 */
+#nickname {
+  width: 260px;
+  padding: 16px;
+  border: 2px solid #55C8FF;
+  border-radius: 12px;
+  background: #FFFFFF;
+  color: #17265C;
+  font-size: 16px;
+  outline: none;
+}
+
+/* 입장 버튼 */
+#enter {
+  padding: 14px 40px;
+  border: none;
+  border-radius: 12px;
+  background: #55C8FF;
+  color: #17265C;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#enter:hover {
+  background:#D94145;
+}
+
+/* 게임 화면 */
+#game {
+  background: #101638;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* 게임 상단 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span {
+  margin-left: 15px;
+}
+
+/* 게임 캔버스 */
+canvas {
+  width: 100%;
+  border-radius: 16px;
+  background: #a9d69a;
+  border: 4px solid #55C8FF;
+}
+
+/* 성공 메시지 */
+#message {
+  font-weight: bold;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  text-align: center;
+}
+
+/* 나가기 버튼 */
+#leave {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 14px;
+  background: #F55355;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#leave:hover {
+  background: #D94145;
+}
+
+/* 숨김 화면 */
+[hidden] {
+  display: none !important;
+}

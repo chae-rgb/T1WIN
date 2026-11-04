@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>할 수 있는거라곤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section id="entrance">
+    <h1>할 수 있는거라곤</h1>
+    <input id="nickname" placeholder="닉네임을 입력하세요">
+    <button id="enter">입장하기</button>
+  </section>
+
+  <main id="game" hidden>
+    <header>
+      <h2>쓰레기 처줍기 뿐...</h2>
+      <div>
+        <span>이만큼 주웠어요 <b id="score">0</b></span>
+        <span>공동 게이지 <b id="gauge">0</b>%</span>
+      </div>
+    </header>
+
+    <canvas id="world" width="900" height="500"></canvas>
+
+    <p id="message">화살표 키로 쓰레기에 가까이 이동한 뒤 7을 눌러 줍기!</p>
+    <button id="leave">나가기</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
